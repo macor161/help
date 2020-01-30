@@ -8,7 +8,7 @@
 </p>
 <h4 id="connecting-to-dashboard"><a href="#">1. Connecting to the Dashboard</a></h4>
 <p>
-	 By default, the Dashboard is accessible to all users. General information and statistics are available on the main page as well as more specific information related to disputes, tasks, and jurors in their respective sections. However, it is when the app is connected to an Ethereum account that it really comes alive and offer its full potential.
+	 By default, the Dashboard is accessible to all users. General information and statistics are available on the main page as well as more specific information related to disputes, tasks, and jurors in their respective page. However, it is when the app is connected to an Ethereum account that it really comes alive and offer its full potential.
 </p>
 
 <p>
@@ -34,10 +34,10 @@
 	<img src="img/dashboard-balances.png">
 </p>
 <p>
-	The first section you will see at the top of the Dashboard contains your ANJ balance information. This section is divided in three columns: <strong>My wallet</strong>, <strong>Inactive</strong> and <strong>Active</strong>.
+	The first section you will see at the top of the Dashboard contains your ANJ balance information. This section is divided into three columns: <strong>My wallet</strong>, <strong>Inactive</strong> and <strong>Active</strong>.
 </p>
 <p>
-	<strong>My wallet</strong> shows the amount of ANJ that your Ethereum wallet currently contains and its relative value in US dollars. Those tokens are not being managed by the Court and are at any given time fully under your control. To activate them and increase your chances of being drafted as a juror, you can click the <strong>Activate</strong> button at the bottom of the section and a side panel will appear asking for the amount of ANJ that you want to activate. The amount will be transfered to the <strong>Active</strong> section once the transaction is executed.
+	<strong>My wallet</strong> shows the amount of ANJ that your Ethereum wallet currently contains and its relative value in US dollars. Those tokens are not being managed by the Court and are at any given time fully under your control. To activate them and increase your chances of being drafted as a juror, you can click the <strong>Activate</strong> button at the bottom of the section and a side panel will appear asking for the amount of ANJ that you want to activate. The amount will be transferred to the <strong>Active</strong> section once the transaction is executed.
 	<br />
 	If you don't own any ANJ tokens, you can click the <strong>Buy ANJ</strong> button at the top right of the dashboard. <a href="">Click here</a> to learn more about the various ways to obtain ANJ.
 </p>
@@ -67,39 +67,55 @@
 	<img src="img/dashboard-tasks.png">
 </p>
 <p>
-	The Aragon Court requires certain tasks to be executed at various points in the lifecycle of a dispute. You can earn <a href="#rewards">rewards</a> by executing some of them while others are mandatory for jurors. Upcoming tasks are directly available in the main section of the Dashboard.
-
-	The following list contains every tasks that you may encounter:
+	The Aragon Court requires certain tasks to be executed at various points in the life-cycle of a dispute. Some of them can be executed by anyone while others are strictly assigned to specific accounts. You can quickly see every task assigned to you along with their due date in the <strong>Upcoming Tasks</strong> section of the main page. A page dedicated to tasks is also available by clicking the <strong>Tasks</strong> menu item in the left side panel.
+</p>
+<p>If you are concerned about missing important tasks, don't worry, email notifications will be sent to you.</p>
+	
+<p>
+  The following list contains every task you may encounter:
 </p>
 
-<h5>Draft jury</h5>
-<p>Description</p>
+<p><strong>Draft jury:</strong> This task must be executed at the beginning of a round to select the jurors. Anyone can execute this task by clicking on the "Draft jury" button of the dispute. A small DAI reward is granted for successfully executing the task.
+</p>
 
-<h5>Commit vote</h5>
-<p>Description</p>
+<p><strong>Commit vote:</strong> One of the most important tasks in the Aragon Court. When a juror is drafted to adjudicate a dispute, their duty is to review the submitted evidences and commit a vote within the voting period limit. Failure to execute this action would penalize the juror. <a href="disputes.html#">Click here</a> for more information about commiting votes.
+</p>
 
-<h5>Reveal vote</h5>
-<p>Description</p>
+<p><strong>Reveal vote:</strong> Since votes are secret until the end of the voting period, a task is also needed in order for the ruling to be unveiled. However, an option is available to make this task fully automated. <a href="">Click here</a> to learn more.</p>
 
-<h5>Appeal ruling</h5>
-<p>Description</p>
+<p><strong>Appeal ruling:</strong> Once the ruling is revealed, it can be appealed by anyone who disagree with its result. Be aware that you need to stake an amount of DAI to appeal a ruling. You will get rewarded if the ruling ends up turning in your favor at the end of the dispute. Learn more about appeals <a href="">here</a>.
+</p>
 
-<h5>Confirm ruling</h5>
-<p>Description</p>
+<p><strong>Confirm appeal:</strong> To officially appeal a ruling and launch a new adjudication round, a second account also needs to stake an amount of DAI to confirm that there is indeed a need for an appeal. Learn more about appeal confirmation <a href="">here</a>.</p>
 
-<h5>Execute ruling</h5>
-<p>Description</p>
-
+<p><strong>Execute ruling:</strong> If no appeal has been requested and confirmed within their respective periods of time, the "Execute ruling" task is available to finalize the dispute. <a href="">Click here</a> to learn more about ruling execution.
+</p>
 
 
 <h4 id="rewards"><a href="#rewards">4. Rewards</a></h4>
 <p>
-	<img src="img/dashboard-balances.png">
+	<img src="img/dashboard-rewards.png">
 </p>
 
-<p>Rewards can be obtained in multiple ways, both as a juror but also as a normal user.</p>
+<p>Rewards can be obtained in multiple ways, both as a juror and as a normal user.</p>
 
-<h5>As a juror</h5>
+<p>
+	<strong>As a juror:</strong>
+	<ul>
+		<li><strong>Subscription fees:</strong> You earn a monthly reward, in DAI, proportional to your active ANJ stake, whether you are drafted or not.
+		<li><strong>Dispute fees:</strong> If drafted, you earn a 10 DAI reward for ruling in favor of the dispute's Final Ruling. 
+		</li>
+		<li><strong>Slashed jurors fees:</strong> The amount slashed from jurors who voted against the consensus is redistributed to the other jurors.</li>
+	</ul>
+</p>
+
+<p>
+	<strong>As a normal user:</strong>
+	<ul>
+		<li><strong>Maintenance actions fees:</strong> Certain tasks (e.g. draft jury, execute ruling) rewards the user with a small amount of DAI.</li>
+		<li><strong>Appeal Fees: </strong> Anyone can earn a reward, in DAI, for successfully appealing a dispute, i.e., correctly predicting a dispute's Final Ruling will differ from a given Preliminary Ruling.</li>
+	</ul>
+</p>
 
 
 <h4 id="disputes"><a href="#disputes">5. Disputes</a></h4>
@@ -107,11 +123,12 @@
 	<img src="img/dashboard-disputes.png">
 </p>
 <p>
-	Disputes are at the core of the Aragon Court. 
-	<a href="disputes.html">Click here</a> for a complete guide on ...
+	Disputes are at the core of the Aragon Court. A dedicated page can be accessed by clicking the <strong>Disputes</strong> menu item in the side panel where you will see a list of disputes related to your account as well as every other past and active disputes. 
 </p>
-
-<h4 id="settings"><a href="#settings">6. Notifications</a></h4>
+<p>	
+	By clicking on one of them, you will get redirected to a page containing all the relevant details to this specific dispute, like its current status, description, history and evidence. Also, every single task related to a dispute can be executed from here.
+	<a href="disputes.html">Click here</a> for a complete guide on the life-cycle of disputes and what you need to do as a juror to manage them.
+</p>
 <p>
-	<img src="img/dashboard-balances.png">
+	<img src="img/dashboard-dispute-details.png">
 </p>
