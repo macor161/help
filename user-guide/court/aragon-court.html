@@ -1,10 +1,30 @@
+<link rel="stylesheet" href="style.css">
+<h1>Aragon Court</h1>
 <p>
-	<!-- General description of the Aragon Court with links to other doc pages -->
+	Aragon Court is one of the core components of the <a href="https://aragon.org/network/">Aragon Network</a>. It is a dispute resolution protocol that handles subjective disputes that cannot be solved by smart contracts. This is achieved by having a set of jurors drafted for each dispute who will vote to guarantee a certain ruling.
 </p>
 <p>
-	<img src="">
+	<img src="img/aragon-court.jpg">
 </p>
-<h4 id=""><a href="#"></a></h4>
+<p>The following articles are available to learn more about the various aspects of the Aragon Court:</p>
+<ul>
+	<li><a href="#fundamentals">Aragon Court fundamentals</a></li>
+	<li><a href="dashboard-overview.html">Aragon Court Dashboard overview</a></li>
+	<li><a href="disputes.html">Disputes life-cycle and resolution</a></li>
+	<li><a href="anj-token.html">How to get ANJ and become a juror</a></li>
+	<li><a href="various-topics.html">Various topics related to the Aragon Court</a></li>
+</ul>
+
+<h4 id="fundamentals"><a href="#fundamentals">Aragon Court fundamentals</a></h4>
 <p>
-	 
+	Jurors sign up to get drafted into the court by staking and activating ANJ tokens in Aragon Court's smart contract. The more tokens a juror has activated, the higher the chance of getting drafted. If you own ANT tokens, you can easily exchange them for ANJ at <a href="https://anj.aragon.org">anj.aragon.org</a>. Otherwise, it is easy to acquire ANT tokens on various exchanges like <a href="https://uniswap.io/">Uniswap</a>, <a href="https://dex.ag/ANT">DEX.AG</a> or <a href="https://wiki.aragon.org/network/aragon_network_token/#trade-ant">other exchanges</a>. Follow this <a href="anj-token.html">guide</a> for further details.
 </p>
+
+<h4 id="majority"><a href="#majority">Majority rules</a></h4>
+<p>Unlike traditional courts, Aragon Court jurors are not asked to rule impartially on disputes but instead are asked to rule the way they expect the majority of jurors to rule. Aragon Court attempts to find what the subjective truth (i.e. the most correct outcome of a dispute) with a <a href="https://en.wikipedia.org/wiki/Focal_point_(game_theory)">Schelling game</a>. Every time a juror is drafted for a dispute, a portion of their staked tokens is locked until the dispute is finalized. To incentivize consensus, jurors who don’t vote in favor of the consensus ruling have their locked tokens slashed. Jurors that vote in favor of the consensus ruling are rewarded with ruling fees and juror tokens from the jurors that voted for a minority ruling.
+
+<h4 id="proof-of-stake"><a href="#proof-of-stake">"Proof of stake"</a></h4>
+<p>Aragon Court is a permissionless protocol where any participant can come and go without asking for anyone's authorization. Therefore the protocol must function with integrity even in the presence of malicious actors, who may pose as multiple jurors at once to "Sybil attack" the Court. The defense against these attacks begins with a simple staking system where juror impact is weighted by their active stake of Aragon Court's native token (ANJ). You may be thinking if a cartel gets a majority of ANJ, they'll have a majority weight and attack the system unopposed since they'll influence more than 50% of the decisions. However, there are multiple mechanisms like iterative appeals, commit & reveal voting, and locked withdrawal periods that prevent a cartel from acquiring and misusing a majority of tokens. For more details about these mechanisms, check out the <a href="https://github.com/aragon/aragon-court/tree/master/docs/3-cryptoeconomic-considerations#aragon-court-as-a-proof-of-stake-system">documentation</a>.</p>
+
+<h4 id="juror-responsibilities"><a href="#juror-responsibilities">Juror responsibilities</a></h4>
+<p>Jurors are expected to perform certain duties and responsibilities, like reviewing evidences for a dispute or casting a vote. In order to help them properly execute their tasks, the Court Dashboard is available that provides all the tools they need. You can lean more about the Dashboard <a href="dashboard-overview.html">here</a> and the details of dispute resolution <a href="disputes.html">here</a>.</p>
