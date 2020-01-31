@@ -2,24 +2,58 @@
 <h1>Dispute life-cycle</h1>
 <p>
 	Terms
+	Dispute states and rounds
 </p>
 <p>
-	<img src="">
+	<img src="img/dashboard-overview.png">
 </p>
-<h4 id=""><a href="#">States and rounds </a></h4>
+
+
+<h4 id=""><a href="#">1. Dispute creation and evidence submission </a></h4>
 <p>
-	 
+	Disputes can only be created by Arbitrable entities which have subscribed to the Aragon Court. In other words, any person or DAO must be registered to the monthly subscription of the Aragon Court to have access to create new disputes.
 </p>
+<p>
+	Once a dispute is created, a period of time is available to submit evidences that will be reviewed by jurors. The evidence can be in text format but HTTP and IPFS links are also accepted. 
+</p>
+<p><strong>No actions are required by jurors during this period.</strong></p>
 
-<h4 id=""><a href="#">Dispute creation and evidence submission </a></h4>
+<h4 id=""><a href="#">2. Drafting jury </a></h4>
+<p>
+	<img src="img/dispute-draft.png">
+</p>
+<p>
+	After the evidence period is over, the first adjudication round is initiated and the <strong>Drafting jury</strong> period begins. The only task required during this period is to click on the <strong>Draft jury</strong> button in the dispute page. Anybody can execute this task and receive a DAI reward proportional to the number of jurors being drafted. The current amount is 0.18 DAI per juror. Pretty neat for a single click action taking a few seconds 😊.
+</p>
+<p>Your chances of being drafter as a juror is directly proportional to your active amount of ANJ.</p>
+<p><strong>If you get selected as a juror</strong>, here are a few things you need to know:</p>
+<ul>
+	<li>You will receive an email notification containing information about the dispute and the next steps for you.</li>
+	<li>A portion of your active ANJ will be locked until the final ruling is confirmed. The main purpose for this is to incentivize consensus decisions and honest behaviors. You can learn more about the various scenarios possible for your locked tokens in the <a href="#voting-period">voting</a> and <a href="#ruling">ruling</a> sections.</li>
+	<li><strong>Neither your inactive ANJ or the ANJ contained in your wallet will be locked.</strong></li>
+</ul>
 
-<h4 id=""><a href="#">Drafting jury </a></h4>
+<h4 id="voting-period"><a href="#voting-period">3. Voting period </a></h4>
+<p>The voting period is critical for a drafted juror. What you must do within the allocated time is first to review the evidences, after which to try anticipating what the voting decision of the juror's majority will be. </p>
+<p>This seems counterintuitive at first. The Aragon Court is not exactly functionning like most legacy jurisdiction systems in which every judge is asked for their unbiased opinion. If this would be the case, it would be unfair to penalize the ruling minority. Instead, jurors are incentivize to reach consensus and are rewarded or penalized accordingly.</p>
+<p>Most importantly, it is essential to cast a vote since omitting of doing so will penalize the juror. Here are the two steps required to cast a vote: </p>
 
-<h4 id=""><a href="#">Voting Period </a></h4>
+<p><strong>3.1. Select one of the three voting choices</strong></p>
+<p><img src="img/dispute-commit-vote.png"></p>
+<p>Three choices are available: voting in favor of the dispute description, voting against it or refusing to vote. You can refuse to vote for many reasons. (e.g. if you consider that the evidences were not conclusive enough or the description was incoherent) In any case, a juror won't get penalized at this stage for selecting any of these options.</p>
 
-<h4 id=""><a href="#">Vote revealing </a></h4>
+<p><strong>3.2. One-time-use code</strong></p>
+<p><img src="img/dispute-commit-vote2.png"></p>
+<p>To keep the votes secret until the end of the voting period, Aragon will hash your vote with a randomly generated code. <strong>For security purposes, it's important to save this code to somewhere safe.</strong></p>
+<p><strong>Enable Court Auto-reveal service</strong> is a convenient option available if you want your vote to be revealed automatically during the next phase. Otherwise, a manual action will be necessary.</p>
+<p>Click the <strong>Commit your vote</strong> to send the transaction.</p>
 
-<h4 id=""><a href="#">Appeal and appeal confirmation</a></h4>
+<h4 id="vote-reveal"><a href="#vote-reveal">4. Vote revealing </a></h4>
+<p><img src="img/dispute-vote-reveal.png"></p>
+<p>After the voting period has ended, jurors will have a 2 days to reveal their vote.</p>
+<p>If you enabled the <strong>Auto-reveal service</strong>, there is no action required from you at this stage. Otherwise, simply click on the <strong>Reveal your vote</strong> button. Your one-time code shouldn't be necessary unless a problem occured within the court.</p>
+
+<h4 id="appeal"><a href="#appeal">4. Appeal and appeal confirmation</a></h4>
 
 <h4 id=""><a href="#">Ruling confirmation and settlements </a></h4>
 
